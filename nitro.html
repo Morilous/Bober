@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discord Nitro 🎁</title>
+  <style>
+    body {
+      background-color: #36393f;
+      color: #fff;
+      font-family: "Segoe UI", sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: #2f3136;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    .btn {
+      background-color: #7289da;
+      color: #fff;
+      padding: 15px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #5b6eae;
+    }
+
+    .surprise {
+      display: none;
+      margin-top: 20px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎉 Отримай Discord Nitro безкоштовно!</h1>
+    <p>Натисни кнопку нижче, щоб активувати Nitro 🎁</p>
+    <button class="btn" onclick="showSurprise()">Активувати</button>
+    <div class="surprise" id="surprise">
+      😂 Жарт! Ніякого Nitro немає... але гарний настрій тобі гарантовано!
+    </div>
+  </div>
+
+  <script>
+    function showSurprise() {
+      document.getElementById('surprise').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
